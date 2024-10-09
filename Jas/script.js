@@ -106,6 +106,9 @@ div.addEventListener("click", (event) => {
     calculus("/");
 });
 
+function handleClick(event) {
+    event.preventDefault();
+} 
 function trigonom(trig) {
     const num = parseFloat(va.value) || 0;
     num_c = num*Math.PI/180;
