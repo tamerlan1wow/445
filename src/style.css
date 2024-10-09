@@ -37,15 +37,20 @@
     color: black;
     margin: auto;
 }
+/* Контейнер с элементами, использующий Flexbox для адаптивного размещения */
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Элементы переносятся на новую строку при нехватке места */
 }
+
+/* Элементы с классами .person и .interests занимают 25% ширины контейнера и центрируются */
 .person, .interests {
     width: 25%;
     margin: auto;
+
 }
+
 .container img {
     border-radius: 10%;
     box-shadow: 10px 10px 5px rgb(78, 78, 78);
@@ -53,7 +58,7 @@
     height: auto; 
 }
 .container img:hover {
-    transform: scale(1.1); /* Увеличение изображения на 10% */
+    transform: scale(1.0); /* Увеличение изображения на 10% */
     transition: 0.5s ease; /* Плавный переход за 0.5 секунды */
     box-shadow: 10px 10px 5px #000000; /* Изменение цвета тени на синий */
 }
@@ -80,7 +85,7 @@ p {
 
 /* Эффект при наведении на параграф */
 p:hover {
-    background-color: #6b85905e; /* Синий фон при наведении */
+    background-color: #5ca6c614; /* Синий фон при наведении */
 }
 
 /* Секции внутри контейнера */
@@ -88,6 +93,7 @@ p:hover {
     width: 100%; /* Секция занимает всю ширину контейнера */
     margin: auto; /* Центрирование секции */
 }
+
 
 .container-video {
     display: flex;
