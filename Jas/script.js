@@ -9,8 +9,8 @@ const div = document.getElementById("butdiv");
 
 const cos = document.getElementById("butcos");
 const sin = document.getElementById("butsin");
-const tg = document.getElementById("buttg");
-const ctg = document.getElementById("butctg");
+const tan = document.getElementById("buttg");
+const cot = document.getElementById("butctg");
 
 let first = document.getElementById("first");
 let second = document.getElementById("second");
@@ -116,11 +116,11 @@ function trigonom(trig) {
         case "sin":
             res2 = Math.sin(num_c);
             break;
-        case "tg":
-            res2 = (num_c % Math.PI) === (Math.PI/2) ? "error" : Math.tg(num_c);
+        case "tan":
+            res2 = (num_c % Math.PI) === (Math.PI/2) ? "error" : Math.tan(num_c);
             break;
-        case "ctg":
-            res2 = (num_c % Math.PI) === 0 ? "error" : 1/(Math.tg(num_c));
+        case "cot":
+            res2 = (num_c % Math.PI) === 0 ? "error" : 1/(Math.tan(num_c));
             break;
     }
 
@@ -144,10 +144,10 @@ sin.addEventListener("click", (event) => {
 
 tan.addEventListener("click", (event) => {
     event.preventDefault()
-    trigonom("tg");
+    trigonom("tan");
 });
 
 cot.addEventListener("click", (event) => {
     event.preventDefault()
-    trigonom("ctg");
+    trigonom("cot");
 });
