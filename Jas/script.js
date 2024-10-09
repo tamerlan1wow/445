@@ -117,7 +117,7 @@ function trigonom(trig) {
             res2 = Math.sin(num_c);
             break;
         case "tan":
-            res2 = (num_c % Math.PI) === (Math.PI/2) ? "error" : (Math.tan(num_c));
+            res2 = (num_c % Math.PI) === (Math.PI/2) ? "error" : Math.tan(num_c);
             break;
         case "cot":
             res2 = (num_c % Math.PI) === 0 ? "error" : 1/(Math.tan(num_c));
