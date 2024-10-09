@@ -149,5 +149,5 @@ tan.addEventListener("click", (event) => {
 
 cot.addEventListener("click", (event) => {
     event.preventDefault()
-    trigonom("cotan");
+    trigonom("cot");
 });
